@@ -7,7 +7,7 @@ const PORT = 5050;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-const MONGO_URL = "mongodb+srv://<db_username>:<db_password>@cluster0.dpoufmu.mongodb.net/data?retryWrites=true&w=majority&appName=Cluster0";
+const MONGO_URL = "mongodb+srv://suraj:kota@cluster0.dpoufmu.mongodb.net/testing?retryWrites=true&w=majority&appName=Cluster0"
 const client = new MongoClient(MONGO_URL);
 
 //GET all users
